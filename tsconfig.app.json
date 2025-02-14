@@ -1,30 +1,64 @@
 {
   "compilerOptions": {
+    /* Define a versão de ECMAScript para a qual o código será transpilado. Aqui é ES2020 */
     "target": "ES2020",
+
+    /* Habilita o uso da definição explícita para campos de classes em TypeScript, de acordo com o ECMAScript */
     "useDefineForClassFields": true,
+
+    /* Define as bibliotecas padrão que serão usadas para o código, incluindo ES2020, DOM e iteráveis do DOM */
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+    /* Define o tipo de módulo a ser usado, neste caso, ESNext, permitindo o uso das 
+    funcionalidades mais recentes de módulos ECMAScript */
     "module": "ESNext",
+
+    /* Ignora verificações de tipos nas bibliotecas (útil para acelerar a compilação em projetos grandes) */
     "skipLibCheck": true,
 
-    /* Bundler mode */
+    /* Modo de resolução de módulos, 'bundler' é para quando se utiliza bundlers modernos (como Webpack, Vite) */
     "moduleResolution": "bundler",
+
+    /* Permite importar arquivos .ts diretamente, sem necessidade de extensão, o que é útil em bundlers modernos */
     "allowImportingTsExtensions": true,
+
+    /* Garante que cada arquivo será tratado como um módulo isolado, sem interferir em outros arquivos */
     "isolatedModules": true,
+
+    /* Força a detecção de módulos, mesmo que o código não siga as convenções usuais */
     "moduleDetection": "force",
+
+    /* Impede que arquivos JavaScript ou TypeScript sejam gerados a partir dos arquivos de origem */
     "noEmit": true,
+
+    /* Define como JSX deve ser tratado. Neste caso, está configurado para o formato React JSX */
     "jsx": "react-jsx",
 
     /* Linting */
+    /* Desabilita as verificações rigorosas de tipo e de práticas de codificação, permitindo mais flexibilidade */
     "strict": false,
+
+    /* Permite que locais não utilizados (como variáveis e funções) não sejam reportados como erro */
     "noUnusedLocals": false,
+
+    /* Permite que parâmetros não utilizados sejam ignorados durante a verificação */
     "noUnusedParameters": false,
+
+    /* Permite que variáveis do tipo 'any' sejam usadas, sem gerar erro */
     "noImplicitAny": false,
+
+    /* Permite que o código continue executando casos de um switch sem break, o que pode ser útil em alguns casos */
     "noFallthroughCasesInSwitch": false,
 
+    /* Define o diretório base para resolução de módulos, no caso, o diretório atual (".") */
     "baseUrl": ".",
+
+    /* Define os caminhos para alias de módulos. Aqui, qualquer importação que use '@/*' será resolvida para './src/*' */
     "paths": {
       "@/*": ["./src/*"]
     }
   },
+
+  /* Define quais arquivos ou diretórios serão incluídos na compilação, neste caso, o diretório 'src' */
   "include": ["src"]
 }

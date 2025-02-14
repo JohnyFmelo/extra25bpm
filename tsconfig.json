@@ -1,19 +1,39 @@
 {
+  /* Define uma lista de arquivos que devem ser explicitamente incluídos na compilação.*/
+  /* No caso, está vazio, indicando que nenhum arquivo específico é necessário aqui */
   "files": [],
+
+  /* Define referências a outros arquivos de configuração TypeScript */
   "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+    { "path": "./tsconfig.app.json" },  /* Faz referência a outro arquivo de configuração para o projeto da aplicação */
+    { "path": "./tsconfig.node.json" }  /* Faz referência a outro arquivo de configuração para o projeto Node.js */
   ],
+
   "compilerOptions": {
+    /* Define o diretório base para resolução de módulos, no caso, o diretório atual (".") */
     "baseUrl": ".",
+
+    /* Define os caminhos para alias de módulos. Aqui, qualquer importação que use '@/*' será resolvida para './src/*' */
     "paths": {
       "@/*": ["./src/*"]
     },
+
+    /* Permite o uso de tipos "any" sem gerar erro. Isso desabilita a restrição de inferência de tipo */
     "noImplicitAny": false,
+
+    /* Permite que parâmetros não utilizados nas funções sejam ignorados sem gerar erro */
     "noUnusedParameters": false,
+
+    /* Ignora a verificação de tipos nas bibliotecas externas, o que pode acelerar a compilação */
     "skipLibCheck": true,
+
+    /* Permite que arquivos JavaScript sejam importados e compilados junto com o código TypeScript */
     "allowJs": true,
+
+    /* Permite que variáveis locais não utilizadas sejam ignoradas durante a verificação */
     "noUnusedLocals": false,
+
+    /* Desabilita a verificação de valores nulos e indefinidos, permitindo que variáveis sejam nulas ou indefinidas sem gerar erro */
     "strictNullChecks": false
   }
 }

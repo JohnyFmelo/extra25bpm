@@ -1,5 +1,5 @@
-// Importa o componente StrictMode do React, usado para ativar verificações adicionais
-// durante o desenvolvimento.
+// Importa o componente StrictMode do React, usado para ativar 
+// verificações adicionais durante o desenvolvimento.
 import { StrictMode } from 'react'
 
 // Importa a função createRoot de react-dom/client para 
@@ -14,7 +14,7 @@ import App from './App.tsx'
 import './index.css'
 
 // Cria a raiz da aplicação React, associando ao elemento DOM com id "root", 
-//e renderiza o componente App dentro do StrictMode.
+// e renderiza o componente App dentro do StrictMode.
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <App />
