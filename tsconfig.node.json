@@ -1,22 +1,47 @@
 {
   "compilerOptions": {
+    /* Define a versão de ECMAScript para a qual o código será transpilado */
     "target": "ES2022",
+
+    /* Define a biblioteca padrão que será usada para o código. No caso, inclui os recursos do ES2023 */
     "lib": ["ES2023"],
+
+    /* Define o tipo de módulo a ser usado, neste caso, ESNext, que */
+    /* permite usar as funcionalidades mais recentes de módulos ECMAScript */
     "module": "ESNext",
+
+    /* Ignora verificações de tipos nas bibliotecas (útil para acelerar a compilação em projetos grandes) */
     "skipLibCheck": true,
 
-    /* Bundler mode */
+    /* Modo de resolução de módulos, 'bundler' é para quando se utiliza bundlers modernos (como Webpack, Vite) */
     "moduleResolution": "bundler",
+
+    /* Permite importar arquivos .ts diretamente, sem necessidade de extensão, o que é útil em bundlers modernos */
     "allowImportingTsExtensions": true,
+
+    /* Garante que cada arquivo será tratado como um módulo isolado, sem interferir em outros arquivos */
     "isolatedModules": true,
+
+    /* Força a detecção de módulos, mesmo que o código não siga as convenções usuais */
     "moduleDetection": "force",
+
+    /* Impede que arquivos JavaScript ou TypeScript sejam gerados a partir dos arquivos de origem */
     "noEmit": true,
 
     /* Linting */
+    /* Ativa todas as verificações rigorosas de tipo e de práticas de codificação */
     "strict": true,
+
+    /* Permite que locais não utilizados (como variáveis e funções) não sejam reportados como erro */
     "noUnusedLocals": false,
+
+    /* Permite que parâmetros não utilizados sejam ignorados durante a verificação */
     "noUnusedParameters": false,
+
+    /* Impede que o código continue executando casos de um switch sem break, o que poderia causar bugs inesperados */
     "noFallthroughCasesInSwitch": true
   },
+
+  /* Define quais arquivos ou diretórios serão incluídos na compilação, neste caso, o arquivo de configuração do Vite */
   "include": ["vite.config.ts"]
 }

@@ -1,69 +1,61 @@
-# Welcome to your Lovable project
+Bem-vindo ao seu projeto Lovable
+Informações do projeto
+URL: https://lovable.dev/projects/5e39ccba-7816-4201-ae62-28256015e1da
 
-## Project info
+Como posso editar este código?
+Existem várias maneiras de editar sua aplicação.
 
-**URL**: https://lovable.dev/projects/5e39ccba-7816-4201-ae62-28256015e1da
+Usar o Lovable
 
-## How can I edit this code?
+Simplesmente acesse o Projeto Lovable e comece a editar.
 
-There are several ways of editing your application.
+As alterações feitas via Lovable serão enviadas automaticamente para este repositório.
 
-**Use Lovable**
+Usar seu IDE preferido
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5e39ccba-7816-4201-ae62-28256015e1da) and start prompting.
+Se você deseja trabalhar localmente usando seu próprio IDE, pode clonar este repositório e enviar as alterações. As alterações enviadas também serão refletidas no Lovable.
 
-Changes made via Lovable will be committed automatically to this repo.
+A única exigência é ter o Node.js e o npm instalados - instale com o nvm
 
-**Use your preferred IDE**
+Siga estes passos:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+sh
+Copiar
+Editar
+# Passo 1: Clone o repositório usando a URL do Git do projeto.
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Passo 2: Navegue até o diretório do projeto.
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
+# Passo 3: Instale as dependências necessárias.
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Passo 4: Inicie o servidor de desenvolvimento com auto-recarregamento e uma visualização instantânea.
 npm run dev
-```
+Editar um arquivo diretamente no GitHub
 
-**Edit a file directly in GitHub**
+Navegue até o(s) arquivo(s) desejado(s).
+Clique no botão "Editar" (ícone de lápis) no canto superior direito da visualização do arquivo.
+Faça suas alterações e envie as alterações.
+Usar o GitHub Codespaces
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Navegue até a página principal do seu repositório.
+Clique no botão "Code" (botão verde) próximo ao canto superior direito.
+Selecione a aba "Codespaces".
+Clique em "Novo codespace" para lançar um novo ambiente Codespace.
+Edite os arquivos diretamente no Codespace e envie suas alterações depois de concluir.
+Quais tecnologias são usadas neste projeto?
+Este projeto é construído com:
 
-**Use GitHub Codespaces**
+Vite
+TypeScript
+React
+shadcn-ui
+Tailwind CSS
+Como posso fazer o deploy deste projeto?
+Simplesmente abra o Lovable e clique em Share -> Publish.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Eu quero usar um domínio personalizado - isso é possível?
+Ainda não oferecemos suporte a domínios personalizados. Se você deseja fazer o deploy do seu projeto sob seu próprio domínio, recomendamos usar o Netlify. Visite nossa documentação para mais detalhes: Domínios personalizados
 
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/5e39ccba-7816-4201-ae62-28256015e1da) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
